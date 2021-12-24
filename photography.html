@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title id="section1">Enerzaya Photography</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js" defer> </script>
+</head>
+<body>
+<div class="header">
+<!-- Glowing header -->
+	<h1 class="glow">Enerzaya Gundalai</h1>
+<!-- Use any element to open/show the overlay navigation menu -->
+	<span onclick="openNav()" class="openbtn">&#9776;</span>
+</div>
+
+<!-- Full screen navigation -->
+<div id="myNav" class="overlay">
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="home.html#section1">Home</a>
+    <a href="#">Writing</a>
+    <a href="photography.html">Photography</a>
+		<a href="http://followingvwoolf.com/index.html">Following Virginia Woolf</a>
+    <a href="home.html#section2">Contact</a>
+  </div>
+	</div>
+
+<!-- Tab Gallery-->
+<!-- The grid: four columns -->
+<div class="tab-gallery-row">
+  <div class="tab-gallery-column">
+		<img src="articles/shift_Page_1.jpg" alt="Pi Shift 1" onclick="myFunction(this);">
+  </div>
+  <div class="tab-gallery-column">
+		<img src="articles/shift_Page_2.jpg" alt="Pi Shift 2" onclick="myFunction(this);">
+  </div>
+  <div class="tab-gallery-column">
+		<img src="articles/bricolage_Page_1.jpg" alt="Pi Bricolage 1" onclick="myFunction(this);">
+  </div>
+  <div class="tab-gallery-column">
+		<img src="articles/bricolage_Page_2.jpg" alt="Pi Bricolage 2" onclick="myFunction(this);">
+  </div>
+</div>
+<!-- The expanding image container -->
+<div class="tab-gallery-container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+</body>
+
+</html>
